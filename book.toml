@@ -1,0 +1,7 @@
+[book]
+title = "AI Fuzzing Field Guide"
+language = "en"
+src = "."
+
+[output.html]
+git-repository-url = "https://github.com/<you>/ai-fuzzing-field-guide"

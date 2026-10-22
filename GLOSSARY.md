@@ -1,0 +1,22 @@
+# Glossary
+
+- **Harness:** code that feeds fuzzer-provided bytes into a target API.
+- **Coverage-guided:** keeps inputs that reach new code edges.
+- **CMPLOG / input-to-state:** logs comparison operands so the fuzzer can insert them into inputs.
+- **Plateau:** a period with no new coverage.
+- **Corpus minimisation:** keeping the smallest set of inputs with the same coverage.
+- **Snapshot fuzzing:** restoring saved process or VM state instead of re-executing a prefix.
+- **Differential oracle:** flags disagreement between implementations rather than crashes.
+- **Invariant:** a property that must hold after every transaction (smart contracts).
+- **Contamination:** the evaluation target or its bugs appearing in model training data.
+- **CRS:** Cyber Reasoning System, an automated find-and-patch system (AIxCC).
+- **A12 (Vargha-Delaney):** effect size; the probability that a random run of one configuration beats a random run of another.
+- **Blocker:** an uncovered branch whose parent block is covered; a target for plateau breaking.
+- **Custom mutator:** user code plugged into AFL++ or LibAFL that changes inputs in a format-aware way.
+- **Fast loop / slow loop:** the per-execution fuzzing loop versus the occasional, asynchronous model loop.
+- **Ghost variable:** test-only state that tracks totals (deposits, withdrawals) so invariants can check them.
+- **Handler contract:** a Foundry contract that bounds inputs and models actors for invariant fuzzing.
+- **Mutation testing:** injecting small bugs (mutants) to measure whether a test or invariant suite detects them.
+- **Power schedule:** the rule a fuzzer uses to decide how much mutation energy each seed receives.
+- **Proof of vulnerability (PoV):** a concrete input that triggers a bug, required for scoring in AIxCC.
+- **Thompson sampling:** a bandit strategy that picks the arm with the highest sample from each arm's posterior.
